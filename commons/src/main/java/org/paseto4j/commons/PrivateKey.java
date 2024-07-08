@@ -5,9 +5,9 @@ public class PrivateKey extends Key<java.security.PrivateKey> {
   @Deprecated
   public PrivateKey(byte[] keyMaterial, Version version) {
     super(keyMaterial, version);
-    if (version.ordinal() >= Version.V3.ordinal())
-      throw new IllegalArgumentException(
-          "Version 3 and above no longer support reading a key from a byte[]");
+    //    if (version.ordinal() >= Version.V3.ordinal())
+    //      throw new IllegalArgumentException(
+    // "Version 3 and above no longer support reading a key from a byte[]");
   }
 
   public PrivateKey(java.security.PrivateKey privateKey, Version version) {
